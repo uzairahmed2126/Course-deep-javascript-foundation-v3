@@ -4,3 +4,4 @@
 # [4.Types of emptiness](./markdown/4.kinds%20of%20emptiness/emptiness.md)
 # [5.NaN & isNaN](./markdown/5.NaN/Nan.md)
 # [6.Negative zero](./markdown/6.negative%20zero/zero.md)
+# [7.typeof](./markdown/7.typeof/typeof.md)
