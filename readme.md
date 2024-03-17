@@ -5,3 +5,4 @@
 # [5.NaN & isNaN](./markdown/5.NaN/Nan.md)
 # [6.Negative zero](./markdown/6.negative%20zero/zero.md)
 # [7.typeof](./markdown/7.typeof/typeof.md)
+# [8.fundamental of objects](./markdown/8.fundamental%20objects/obj.md)
