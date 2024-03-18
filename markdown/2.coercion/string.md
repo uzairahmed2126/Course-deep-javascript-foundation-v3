@@ -1,0 +1,2 @@
+# The toString() method of Object instances returns a string representing this object. This method is meant to be overridden by derived objects for custom type coercion logic.
+#### [Click and see code](/2.coersion/2.tostring/app.js)
