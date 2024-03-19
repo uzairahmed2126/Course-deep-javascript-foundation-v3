@@ -8,4 +8,5 @@
 # [8.fundamental of objects](./markdown/1.types/8.fundamental%20objects/obj.md)
 **Coersion**
 # [1.Abstract operation](./markdown/2.coercion/1.Abstract%20Operations/abstract.md)
-# [1.tostring ](./markdown/2.coercion/2.tostring.md)
+# [2.toString ](./markdown/2.coercion/2.tostring.md/string.md)
+# [3.toNumber ](./markdown/2.coercion/3.tonumber/number.md)
