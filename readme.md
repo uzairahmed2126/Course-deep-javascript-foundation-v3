@@ -10,3 +10,4 @@
 # [1.Abstract operation](./markdown/2.coercion/1.Abstract%20Operations/abstract.md)
 # [2.toString ](./markdown/2.coercion/2.tostring.md/string.md)
 # [3.toNumber ](./markdown/2.coercion/3.tonumber/number.md)
+# [4.toboolean ](./markdown/2.coercion/4.toboolean/boolean.md)
