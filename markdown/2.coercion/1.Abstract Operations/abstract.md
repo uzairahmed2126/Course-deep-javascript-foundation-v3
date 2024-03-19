@@ -1,4 +1,5 @@
 # Abstract operation
+### coersion means do something that do not want like (conversion of data types).
 ### Advantages of Data Abstraction
 1. Helps the user to avoid writing low-level code.
 2. Avoids code duplication and increases reusability.

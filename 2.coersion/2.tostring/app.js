@@ -40,7 +40,7 @@ class animal2 {
         this.color = color;
         this.sex = sex;
     }
-    toString(){
+    toString() {
         return `Animal ${this.name} is a ${this.sex} ${this.color} ${this.breed}`
     }
 }
