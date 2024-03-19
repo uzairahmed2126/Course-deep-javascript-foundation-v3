@@ -3,4 +3,4 @@
 ```js
 console.log(Number('0xee'))//238
 ```
-#### [Click and see code](/2.coersion/3.tonumber/app.js)
+#### [Click and see code](/2.coercion/3.tonumber/app.js)
