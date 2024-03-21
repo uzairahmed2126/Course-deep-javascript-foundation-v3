@@ -11,3 +11,4 @@
 # [2.toString ](./markdown/2.coercion/2.tostring.md/string.md)
 # [3.toNumber ](./markdown/2.coercion/3.tonumber/number.md)
 # [4.toboolean ](./markdown/2.coercion/4.toboolean/boolean.md)
+# [5.cases of coercion ](./markdown/2.coercion/5.cases%20of%20coercion/case.md)
