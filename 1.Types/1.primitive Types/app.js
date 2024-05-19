@@ -14,6 +14,16 @@ console.log("Undefined:", undef);
 console.log("Symbol:", sym);
 console.log("BigInt:", bigInt);
 
-const sym1 = Symbol('sym2');
-const sym2 = Symbol('sym2');
-console.log(sym1 === sym2); 
+const sym1 = Symbol("sym2");
+const sym2 = Symbol("sym2");
+console.log(sym1 === sym2);
+
+// non-primitive
+let arr = [];
+let obj = {};
+let fn = function () {
+  return "function";
+};
+console.log("array:", arr);
+console.log("object:", obj);
+console.log("function:", fn());
