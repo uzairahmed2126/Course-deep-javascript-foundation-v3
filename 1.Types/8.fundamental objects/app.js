@@ -1,42 +1,78 @@
-function Car(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-}
+// function Car(make, model, year) {
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+// }
 
-const car1 = new Car('Eagle', 'Talon TSi', 1993);
-const car2 = new Car('hell', 'o', 2003);
+// const car1 = new Car("Eagle", "Talon TSi", 1993);
+// const car2 = new Car("hell", "o", 2003);
 
-console.log(car1.make);
-console.log(car2.make, car2.model, car2.year);
+// console.log(car1.make);
+// console.log(car2.make, car2.model, car2.year);
 
-let yesterday = new Date('march 6 ,2019');
-yesterday.toUTCString();
-// let myGPA = String(transcript.gpa)
+// let yesterday = new Date("march 6 ,2019");
+// yesterday.toUTCString();
+// // let myGPA = String(transcript.gpa)
 
+// class person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   greet() {
+//     console.log(`Hello, my name is ${this.name}`);
+//   }
+// }
+// const p = new person("john");
+// p.greet();
 
-class person {
-    constructor(name) {
-        this.name = name;
-    }
-    greet() {
-        console.log(`Hello, my name is ${this.name}`);
-    }
-}
-const p = new person('john');
-p.greet()
+// class myClass {
+//   constructor(a, b) {
+//     this.a = a;
+//     this.b = b;
+//   }
+//   input(a, b) {
+//     console.log(a + b);
+//   }
+// }
+// const value = new myClass();
+// value.input(1, 2);
+// class hey {
+//   constructor(a) {
+//     this.a = a;
+//   }
+//   myFunc(a) {
+//     a = 20;
+//     console.log("I'm a:", a);
+//   }
+// }
+// const valueOfHey = new hey();
+// valueOfHey.myFunc();
 
-class myClass {
-    constructor(a, b) {
-        this.a = a;
-        this.b = b;
-    }
-    input(a, b) {
-        console.log(a + b);
-    }
-}
-const value = new myClass();
-value.input(1, 2);
+// class writeName {}
 
+// let calles = ["call", "call", "call"];
+
+// function counter(n) {
+//   n = 10;
+//   let arr = [];
+//   for (let i = 0; i < calles.length; i++) {
+//     arr.push(n + i);
+//   }
+//   return arr;
+// }
+// console.log(counter());
+
+var compose = function (functions) {
+  if (functions.length === 0) {
+    return function (x) {
+      return x;
+    };
+  }
+  return functions.reduceRight(function (prevFn, nextFn) {
+    return function (x) {
+      return nextFn(prevFn(x));
+    };
+  });
+};
 
 

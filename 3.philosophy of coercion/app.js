@@ -1,0 +1,1 @@
+// JavaScript's dynamic typing is not a weakness. it's one of its strong qualities.
