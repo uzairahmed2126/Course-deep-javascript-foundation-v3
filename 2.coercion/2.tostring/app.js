@@ -1,16 +1,16 @@
 function animal(name) {
-    this.name = name;
+  this.name = name;
 }
-const animal1 = new animal('lion');
+const animal1 = new animal("lion");
 animal.prototype.toString = function animalToString() {
-    return this.name;
+  return this.name;
 };
 console.log(animal1.toString());
 let arr = [122];
-console.log(typeof arr);//"object"
-console.log(arr.toString());//"122"
+console.log(typeof arr); //"object"
+console.log(arr.toString()); //"122"
 let a = Object.prototype.toString.call(arr);
-console.log(a);//"[object Array]"
+console.log(a); //"[object Array]"
 
 const toString = Object.prototype.toString;
 
@@ -23,7 +23,6 @@ console.log(toString.call(undefined)); // [object Undefined]
 console.log(toString.call(null)); // [object Null]
 console.log(toString.call(Boolean)); // [object Function]
 
-
 // const myDate = new Date();
 // console.log(Object.prototype.toString.call(myDate)); // [object Date]
 
@@ -34,17 +33,31 @@ console.log(toString.call(Boolean)); // [object Function]
 // console.log(Object.prototype.toString.call(new Date())); // [object prototype polluted]
 
 class animal2 {
-    constructor(name, breed, color, sex) {
-        this.name = name;
-        this.breed = breed;
-        this.color = color;
-        this.sex = sex;
-    }
-    toString() {
-        return `Animal ${this.name} is a ${this.sex} ${this.color} ${this.breed}`
-    }
+  constructor(name, breed, color, sex) {
+    this.name = name;
+    this.breed = breed;
+    this.color = color;
+    this.sex = sex;
+  }
+  toString() {
+    return `Animal ${this.name} is a ${this.sex} ${this.color} ${this.breed}`;
+  }
 }
-const anim1 = new animal2('giraf', 'normal', 'orange', 'male');
-const anim2 = new animal2('lion', 'normal', 'white', 'male');
+const anim1 = new animal2("giraf", "normal", "orange", "male");
+const anim2 = new animal2("lion", "normal", "white", "male");
 console.log(anim1.toString());
 console.log(anim2.toString());
+
+// const num = 1;
+// const bool = Boolean(num); // Explicit coercion from number to boolean
+// console.log(bool); // false
+// console.log(typeof bool); // "boolean"
+
+const bool = true;
+const result = bool + 1;
+console.log(result); //2
+console.log(typeof result);
+
+let num2 = 20;
+const converIntoString = `${num2}`;
+console.log(typeof converIntoString);
