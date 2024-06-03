@@ -7,4 +7,3 @@ if (workshop1.topic === null && workshop2.topic === null) {
 } else {
   console.log(false);
 }
-
