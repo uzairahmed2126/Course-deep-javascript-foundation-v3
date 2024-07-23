@@ -27,3 +27,18 @@ function outer(a) {
 const multiply = outer(5); // Pass an argument to the outer function
 const result = multiply(3); // Call the inner function with an argument
 console.log(result); // Output: 15
+
+//Imediate invoked function expression
+(function () {
+  console.log("hello");
+})();
+
+(function (a, b) {
+  console.log(a * b);
+})(10, 20);
+
+// anonymous function
+let a = function() {
+  return "hello";
+}
+console.log(a())
