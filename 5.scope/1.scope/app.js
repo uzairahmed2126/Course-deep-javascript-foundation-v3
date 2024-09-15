@@ -38,7 +38,57 @@ console.log(result); // Output: 15
 })(10, 20);
 
 // anonymous function
-let a = function() {
+let a = function () {
   return "hello";
+};
+console.log(a());
+
+// dynamic global variables
+("use strict");
+var teacher = "kyle";
+function otherClass() {
+  teacher = "suzy";
+  topic = "react";
+  console.log(teacher); //suzy
 }
-console.log(a())
+console.log(teacher); //kyle
+otherClass();
+
+//LEXICAL ELEVATOR
+function step1() {
+  let a = "1";
+  function step2() {
+    let b = "2";
+    function step3() {
+      let c = "3";
+      console.log(a, b, c);
+    }
+    step3();
+    console.log(a, b);
+  }
+  step2();
+  console.log(a);
+}
+step1();
+
+function teacher() {}
+var myTeacher = function anotherTeacher(num) {
+  return num;
+};
+console.log(teacher);
+// console.log(myTeacher);
+function first() {
+  let a = 1;
+  function two() {
+    let b = 2;
+    function three() {
+      let c = 3;
+      console.log(a, b, c);
+    }
+    three();
+    console.log(a, b);
+  }
+  two();
+  return a;
+}
+console.log(first());
