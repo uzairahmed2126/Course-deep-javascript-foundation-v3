@@ -84,61 +84,73 @@
 // // let value = multiply(10);
 // console.log(multiply(10,10)()); //100
 
-// dynamic global variables
-// "use strict"
-// var teacher = "kyle";
-// function otherClass() {
-//   teacher = "suzy";
-//   topic = "react";
-//   console.log(teacher); //suzy
-// }
-// console.log(teacher); //kyle
-// otherClass();
 
-// //LEXICAL ELEVATOR
-// function step1() {
-//   let a = "1";
-//   function step2() {
-//     let b = "2";
-//     function step3() {
-//       let c = "3";
-//       console.log(a, b, c);
-//     }
-//     step3();
-//     console.log(a, b);
-//   }
-//   step2();
-//   console.log(a);
-// }
-// step1();
 
-// function teacher() {}
-// var myTeacher = function anotherTeacher(num) {
-//   return num;
+
+// // var clickHandler = function () {
+
+// // };
+
+// var keyHandler = function keyHandler(x) {
+//   return x;
 // };
-// console.log(teacher);
-// console.log(myTeacher);
-function first() {
-  let a = 1;
-  function two() {
-    let b = 2;
-    function three() {
-      let c = 3;
-      console.log(a, b, c);
-    }
-    three();
-    console.log(a, b);
+// console.log(keyHandler(10));
+
+class student {
+  constructor(name, rollNumber, skill) {
+    this.name = name;
+    this.rollNumber = rollNumber;
+    this.skill = skill;
   }
-  two();
-  return a;
 }
-console.log(first());
 
-// var clickHandler = function () {
-
-// };
-
-var keyHandler = function keyHandler(x) {
-  return x;
+class data {
+  constructor() {
+    this.students = [];
+  }
+  addStudent(name, rollN, skill) {
+    this.students.push(new student(name, rollN, skill));
+  }
+  deleteStudent(rollN) {
+    this.students = this.students.filter(
+      (student) => student.rollNumber != rollN
+    );
+  }
+  seeAllStudent() {
+    this.students.map((student) => {
+      console.log(
+        `name is ${student.name} rollN is ${student.rollNumber} and skill is ${student.skill}`
+      );
+    });
+  }
+  getDetailsOnRollNumber(rollNum) {
+    let s = this.students.find((item) => item.rollNumber === rollNum);
+    if (s) {
+      console.log(
+        `name is ${s.name} rollN is ${s.rollNumber} and skill is ${s.skill}`
+      );
+    } else {
+      console.log("roll number does not exist");
+    }
+  }
+  getDetailsOnName(searchName) {
+    let naam = this.students.find((item) => item.name === searchName);
+    if (searchName) {
+      console.log(
+        `name is ${naam.name} rollN is ${naam.rollNumber} and skill is ${naam.skill}`
+      );
+    } else {
+      console.log("Name does not exist");
+    }
+  }
 }
-console.log(keyHandler(10));
+
+let list = new data();
+list.addStudent("salam", 1, "chutiyapa");
+list.addStudent("uzair", 2, "html");
+list.addStudent("musavvir", 3, "css");
+list.seeAllStudent();
+// list.deleteStudent(3);
+list.seeAllStudent();
+list.getDetailsOnRollNumber(3);
+list.getDetailsOnName("uzair");
