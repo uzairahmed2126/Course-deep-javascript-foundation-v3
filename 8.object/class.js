@@ -90,3 +90,28 @@ employeeList.addEmpName(2, "ahmed", "frontend developer");
 employeeList.addEmpName(3, "saleh", "full stack developer");
 // employeeList.deleteDataOnId(2);
 employeeList.showData();
+
+class superClass {
+  constructor(name) {
+    this.name = name;
+  }
+  addExpresion(expression) {
+    return expression;
+  }
+}
+class secondClass extends superClass {
+  constructor(id, name) {
+    super(name); // it will inherit to parent class constructor
+    this.id = id;
+  }
+  getFullName(id = this.id, name = this.name) {
+    console.log(
+      `id is ${id} super expression is ${super.addExpresion(
+        "-"
+      )} super name is ${name}`
+    );
+  }
+}
+let data = new secondClass();
+data.getFullName(1, "uzair");
+data.getFullName(2, "ahmed");
