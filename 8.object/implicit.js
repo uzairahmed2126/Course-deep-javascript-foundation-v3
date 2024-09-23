@@ -1,16 +1,3 @@
-// let uzair = {
-//   name: " uzair",
-//   getName: function () {
-//     console.log(this.name);
-//   },
-// };
-// uzair.getName();
-// function addLast() {
-//   this.name += " Ahmed";
-//   console.log(this.name);
-// }
-// addLast.call(uzair);
-
 // let studentName = {
 //   firstName: "Abdul",
 //   getName: function () {
